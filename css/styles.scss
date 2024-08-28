@@ -1,0 +1,79 @@
+// Variables de color
+$color-primary: #3046C5;
+$color-secondary: #5637dd;
+$color-pale: #CEC8FF;
+$color-mid: #901CAD;
+$color-dark: #60106b;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-teal: #17A2B8;
+
+// Fuentes
+$body-font: "Open Sans", sans-serif;
+$header-font: "Lobster", cursive;
+
+// Estilos globales
+body {
+    font-family: $body-font;
+}
+
+h1, h2, h3 {
+    font-family: $header-font;
+}
+
+// Estilos específicos
+h2 {
+    color: $color-primary;
+}
+
+// Encabezado
+header {
+    padding: 30px;
+    background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark);
+    color: white;
+}
+
+// Encabezado dentro de header
+header {
+    h2 {
+        color: $color-pale;
+    }
+}
+
+// Pie de página
+footer {
+    background-image: linear-gradient($color-pale, white);
+    padding: 20px 0;
+}
+
+// Contenido de la fila
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+// Barra de navegación
+.navbar {
+    background-color: $color-mid;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+}
+
+// Botón del acordeón
+.accordion-button {
+    background-color: #d3d3d3;
+}
+
+// Carrusel
+.carousel {
+    border: solid $color-secondary;
+}
+
+.carousel-caption {
+    background-color: $color-black-transparent;
+}
+
+@import "modal";
+@import "review-section"
